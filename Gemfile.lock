@@ -90,8 +90,6 @@ GEM
       net-ssh (>= 1.99.1)
     nokogiri (1.5.2)
     nokogiri (1.5.2-x86-mingw32)
-    pg (0.13.2)
-    pg (0.13.2-x86-mingw32)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-cache (0.5.3)
@@ -154,7 +152,6 @@ DEPENDENCIES
   capistrano
   fog
   mysql2
-  pg
   rails (~> 3.0.3)
   refinerycms (~> 0.9.8.9)
   refinerycms-attachments (= 1.0)!
