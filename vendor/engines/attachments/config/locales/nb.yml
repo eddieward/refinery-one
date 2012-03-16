@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    attachments:
+      title: Attachments
+  admin:
+    attachments:
+      index:
+        create_new: Lag en ny Attachment
+        reorder: Endre rekkefølgen på Attachments
+        reorder_done: Ferdig å endre rekkefølgen Attachments
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Attachments enda. Klikk på "Lag en ny Attachment" for å legge til din første attachment.
+      attachment:
+        view_live: Vis hvordan denne attachment ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne attachment
+        delete: Fjern denne attachment permanent
+  attachments:
+    show:
+      other: Andre Attachments

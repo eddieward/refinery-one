@@ -1,0 +1,3 @@
+PassengerEnabled On
+PassengerAppRoot /home/engeltax/engel_tax/current
+RailsEnv production

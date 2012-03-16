@@ -1,0 +1,41 @@
+<div id="custom-doc" class="yui-t7">
+  <!--start doc-->
+  <div id="wrapper">
+    <!--start wrapper-->
+
+    <div id="hd" role="banner">
+      <!--start header-->
+
+      <% if @page
+        if @page.title
+          case @page.title
+          when "Home": current = "home"
+          when "About": current = "about"
+          when "Contact Us": current = "contactus"
+          when "Our Process": current = "ourprocess"
+          end
+        end
+      end
+    %>
+
+
+      <div id=navbar role=navigation class=<%= current %>>
+        <!--start navbar-->
+        <ul>
+          <li id=home> <a href="/">Home</a> </li>
+          <li id=about> <a href="/about">About</a> </li>
+          <li id=ourprocess> <a href="/our-process">Our Process</a> </li>
+          <li id=contactus> <a href="/contact">Contact Us</a> </li>
+        </ul>
+        <div id="nav_image"></div>
+        <div id="free_quote"> <a href="/free-quote#freequoteanchor"><img alt="Free Quote" src="/images/engeltax/free_quote_tab.gif?1257635302" /></a> </div>
+      </div>
+      <!--end navbar-->
+      <div id="nav_bottom"><img src="/images/engeltax/nav_horizontal.gif" /></div>
+    </div>
+    <!--end header-->
+
+  </div>
+  <!-- end wrapper-->
+</div>
+<!-- end doc-->

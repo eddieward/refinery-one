@@ -1,0 +1,1098 @@
+@import url('refinery/application.css');
+
+/*
+  Override default refinery application CSS below.
+  Formatting applies to all frontend.
+*/
+
+#page {
+    margin-top: -20px;
+}
+
+
+#body_content_page_title {
+    margin-top: 10px;
+    visibility: hidden
+
+}
+
+#attachments {
+
+}
+
+#attachments li {
+    list-style-type: none;
+}
+
+#instructions {
+
+}
+
+#instructions li {
+    list-style-type: none;
+}
+
+#quotes-show {
+    font-size: 14px;
+}
+
+#quotes-show p {
+    padding-bottom: 7px;
+}
+
+#quotes-index {
+    font-size: 14px;
+}
+
+#quotes-index table, td, th {
+    border: 2px solid #ccc;
+}
+
+#quotes-index table {
+    width: 100%;
+}
+
+#quotes-index th {
+    height: 50px;
+    padding-left: 10px;
+}
+
+#quotes-edit table, td, tr {
+    border: 0px solid #fff;
+}
+
+#pagination {
+    float: right;
+    margin-top: 10px;
+}
+
+/*Copyright (c) 2006,Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt */
+/*reset.css*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+strong {
+    color: #000;
+}
+
+.checklist a {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.our-process {
+    font-size: 1.0em;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+/*fonts.css*/
+body {
+    font: 13px arial, helvetica, clean, sans-serif;
+    *font-size: small;
+    *font: x-small;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+select, input, textarea {
+    font: 99% arial, helvetica, clean, sans-serif;
+}
+
+pre, code {
+    font: 115% monospace;
+    *font-size: 100%;
+}
+
+body * {
+    line-height: 1.22em;
+}
+
+/*grids.css*/
+body {
+    text-align: center;
+}
+
+#ft {
+    clear: both;
+}
+
+#doc, #doc2, #doc3, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7 {
+    margin: auto;
+    text-align: left;
+    width: 57.69em;
+    *width: 56.3em;
+    min-width: 750px;
+}
+
+#doc2 {
+    width: 73.074em;
+    *width: 71.313em;
+    min-width: 950px;
+}
+
+#doc3 {
+    margin: auto 10px;
+    width: auto;
+}
+
+.yui-b {
+    position: relative;
+}
+
+.yui-b {
+    _position: static;
+}
+
+#yui-main .yui-b {
+    position: static;
+    b;
+}
+
+#yui-main {
+    width: 100%;
+}
+
+.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main {
+    float: right;
+    margin-left: -25em;
+}
+
+.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
+    float: left;
+    margin-right: -25em;
+}
+
+.yui-t1 .yui-b {
+    float: left;
+    width: 12.3207em;
+    *width: 12.0106em;
+}
+
+.yui-t1 #yui-main .yui-b {
+    margin-left: 12.3207em;
+    *margin-left: 12.0106em;
+}
+
+.yui-t2 .yui-b {
+    float: left;
+    width: 13.8456em;
+    *width: 13.512em;
+}
+
+.yui-t2 #yui-main .yui-b {
+    margin-left: 14.8456em;
+    *margin-left: 14.512em;
+}
+
+.yui-t3 .yui-b {
+    float: left;
+    width: 23.0759em;
+    *width: 22.52em;
+}
+
+.yui-t3 #yui-main .yui-b {
+    margin-left: 24.0759em;
+    *margin-left: 23.52em;
+}
+
+.yui-t4 .yui-b {
+    float: right;
+    width: 13.8456em;
+    *width: 13.512em;
+}
+
+.yui-t4 #yui-main .yui-b {
+    margin-right: 14.8456em;
+    *margin-right: 14.512em;
+}
+
+.yui-t5 .yui-b {
+    float: right;
+    width: 18.4608em;
+    *width: 18.016em;
+}
+
+.yui-t5 #yui-main .yui-b {
+    margin-right: 19.4608em;
+    *margin-right: 19.016em;
+}
+
+.yui-t6 .yui-b {
+    float: right;
+    width: 23.0759em;
+    *width: 22.52em;
+}
+
+.yui-t6 #yui-main .yui-b {
+    margin-right: 24.0759em;
+    *margin-right: 23.52em;
+}
+
+.yui-t7 #yui-main .yui-b {
+    display: block;
+    margin: 0 0 1em 0;
+}
+
+#yui-main .yui-b {
+    float: none;
+    width: auto;
+}
+
+.yui-g .yui-u, .yui-g .yui-g, .yui-gc .yui-u, .yui-gc .yui-g .yui-u,
+.yui-ge .yui-u, .yui-gf .yui-u {
+    float: right;
+    display: inline;
+}
+
+.yui-g div.first, .yui-gc div.first, .yui-gc div.first div.first,
+.yui-gd div.first, .yui-ge div.first, .yui-gf div.first {
+    float: left;
+}
+
+.yui-g .yui-u, .yui-g .yui-g {
+    width: 49.1%;
+}
+
+.yui-g .yui-g .yui-u, .yui-gc .yui-g .yui-u {
+    width: 48.1%;
+}
+
+.yui-gb .yui-u, .yui-gc .yui-u, .yui-gd .yui-u {
+    float: left;
+    margin-left: 2%;
+    *margin-left: 1.895%;
+    width: 32%;
+}
+
+.yui-gb div.first, .yui-gc div.first, .yui-gd div.first {
+    margin-left: 0;
+}
+
+.yui-gc div.first, .yui-gd .yui-u {
+    width: 66%;
+}
+
+.yui-gd div.first {
+    width: 32%;
+}
+
+.yui-ge .yui-u {
+    width: 24%;
+}
+
+.yui-ge div.first, .yui-gf .yui-u {
+    width: 74.2%;
+}
+
+.yui-gf div.first {
+    width: 24%;
+}
+
+.yui-ge div.first {
+    width: 74.2%;
+}
+
+#bd:after, .yui-g:after, .yui-gb:after, .yui-gc:after,
+.yui-gd:after, .yui-ge:after, .yui-gf:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+    zoom: 1;
+}
+
+/*--==GENERAL==--*/
+body {
+    background-color: #FFFFFF;
+    background-image: url(/images/engeltax/bg_grad.gif);
+    background-repeat: repeat-x;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#custom-doc {
+    width: 66.15em; /* non-IE */
+    *width: 64.5em; /* IE */
+    min-width: 860px; /* optional but recommended */
+    margin: auto;
+    text-align: left; /* leave unchanged */
+}
+
+#wrapper {
+    width: 860px;
+}
+
+a {
+    color: #284B5E;
+}
+
+a:visited {
+    color: #577780;
+}
+
+a:active {
+    color: #284B5E;
+}
+
+a:hover {
+    color: #577780;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 27px; /*font-weight: bold;*/
+    overflow: hidden;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: #284B5E;
+    padding: 10px 0;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/*------------------------------------------------------------------------
+=Flash Messages
+------------------------------------------------------------------------*/
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+#notice {
+    color: green;
+}
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+.errorExplanation#errorExplanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    background-color: #f0f0f0;
+}
+
+.errorExplanation#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+}
+
+.errorExplanation#errorExplanation ul li {
+    font-size: 12px;
+    list-style-type: square;
+}
+
+#flash_messages {
+    /*padding: 8px;
+    margin-bottom: 18px;*/
+    /*background: #fee37a;
+    border: 1px solid #fd9b5b;*/
+}
+
+#flash_messages p {
+    margin-bottom: 0;
+    padding: 8px;
+    margin-bottom: 18px;
+}
+
+#flash_messages p.error {
+    background: #fcc;
+    border: 1px solid #f00;
+}
+
+#flash_messages p.notice {
+    background: #fee37a;
+    border: 1px solid #fd9b5b;
+}
+
+#flash_messages p.message {
+    background: #cbf285;
+    border: 1px solid #3cab09;
+}
+
+/*--==END FLASH MESSAGES==--*/
+
+/*--==END GENERAL==--*/
+
+/*--==DIVS==--*/
+
+/*HEADER*/
+#hd {
+    height: 154px;
+    width: 860px;
+    background-image: url(/images/engeltax/header.gif);
+    background-repeat: no-repeat;
+}
+
+#nav_bottom {
+    margin-top: -2px;
+}
+
+#nav_bottom img {
+    height: 10px;
+    width: 860px;
+
+    _margin-top: -3px; /*IE6 hack for space in nav bar */
+}
+
+/*END HEADER*/
+
+/*NAVIGATION*/
+#navbar {
+    height: 27px;
+    width: 860px;
+    padding-top: 125px;
+    position: relative;
+    z-index: 9999;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    height: 27px;
+    width: 114px;
+    float: left;
+    overflow: hidden;
+    color: #FFFFFF;
+    text-indent: -9999px;
+    margin-right: 3px;
+}
+
+#navbar ul li a, #navbar #nav_image {
+    background-image: url(/images/engeltax/engel_navbar.gif);
+    background-repeat: no-repeat;
+}
+
+li#home a {
+    background-position: 0 0;
+}
+
+li#about a {
+    background-position: -117px 0px;
+}
+
+li#ourprocess a {
+    background-position: -234px 0;
+}
+
+li#tax_advice a {
+    background-position: -342px 0;
+}
+
+li#contactus a {
+    background-position: -468px 0;
+}
+
+li#home a:hover {
+    background-position: 0 -27px;
+}
+
+li#about a:hover {
+    background-position: -117px -27px;
+}
+
+li#ourprocess a:hover {
+    background-position: -234px -27px;
+}
+
+li#tax_advice a:hover {
+    background-position: -342px -27px;
+}
+
+li#contactus a:hover {
+    background-position: -468px -27px;
+}
+
+li#home a:active {
+    background-position: 0 -27px;
+}
+
+li#about a:active {
+    background-position: -117px -27px;
+}
+
+li#ourprocess a:active {
+    background-position: -234px -27px;
+}
+
+li#tax_advice a:active {
+    background-position: -342px -27px;
+}
+
+li#contactus a:active {
+    background-position: -468px -27px;
+}
+
+.required {
+    height: 30px;
+}
+
+#inquiry_submit {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #284B5E;
+    border: 2px solid;
+    border-color: #64899C #263743 #263743 #64899C;
+    padding: 7px;
+}
+
+#quote_submit {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #284B5E;
+    border: 2px solid;
+    border-color: #64899C #263743 #263743 #64899C;
+    padding: 7px;
+}
+
+.destroy {
+    width: 100px;
+    height: 30px;
+    margin-top: 6px;
+    color: #ffffff;
+    font-size: 1.0em;
+    background-color: #284B5E;
+    border: 2px solid;
+    border-color: #64899C #263743 #263743 #64899C;
+    padding: 6px;
+}
+
+.home li#home a {
+    background-position: 0 -27px;
+!important
+}
+
+.about li#about a {
+    background-position: -117px -27px;
+!important
+}
+
+.ourprocess li#ourprocess a {
+    background-position: -234px -27px;
+!important
+}
+
+.tax_advice li#tax_advice a {
+    background-position: -342px -27px;
+!important
+}
+
+.contactus li#contactus a {
+    background-position: -468px -27px;
+!important
+}
+
+#free_quote {
+    height: 27px;
+    width: 164px;
+    float: right;
+}
+
+/*END NAVIGATION*/
+
+/*CONTENT*/
+#image_wrapper {
+    padding: 25px 0 10px 0;
+}
+
+#sub_header_left {
+    padding-top: 10px;
+    width: 530px;
+}
+
+#sub_header_gray p {
+    color: #626262;
+    padding: 10px 0 15px 0;
+    width: 530px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#home_page_list p.sub_list {
+    padding-bottom: 15px;
+    width: 500px;
+}
+
+#home_page_list span.e_list {
+    vertical-align: super; /*no idea why super worked */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.sub_list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #626262;
+}
+
+#sub_header_right {
+    min-height: 200px;
+    overflow: hidden;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*#resources_header_right{
+		min-height: 200px;
+		overflow: hidden;
+		padding: 0 0 0px 0px;
+		font-family:Arial, Helvetica, sans-serif;
+	}*/
+
+#sub_header_right ul {
+    list-style-type: none;
+}
+
+#sub_header_right ul li {
+    width: 240px;
+    clear: both;
+    padding: 10px 0 2px 15px;
+    background-image: url(/images/engeltax/list_bullet.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 18px;
+}
+
+/*#resources_header_right ul li{
+        list-style-type:none;
+        padding-bottom: 0px;
+        color: #666666;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }	*/
+
+#second_header_right ul li {
+/*min-height: 200px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    clear: both;
+    padding: 10px 0px 5px 10px; /*color: #333333;*/
+}
+
+#second_header_right img {
+    padding-top: 10px;
+}
+
+#second_header_right a img {
+/*padding-right: 20px;*/
+    padding: 10px 0 25px 70px;
+}
+
+#refer_friend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#year_filing h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#refund_button {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*#refund_links ul{
+		list-style-type:none;
+	}*/
+
+#refund_links ul li {
+/*width: 240px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    clear: both; /* adding this and removing the same from refund links 2 kept the bullets ordered one after another */
+    padding: 10px 0 2px 0px; /*background-image:url(/images/engeltax/list_bullet.jpg);*/
+    background-repeat: no-repeat; /*background-position:0px 18px;*/
+}
+
+#refund_links2 ul li {
+/*width: 240px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px; /*clear:both;*/
+    padding: 10px 0 2px 0px; /*background-image:url(/images/engeltax/list_bullet.jpg);*/
+    background-repeat: no-repeat; /*background-position:0px 18px;*/
+}
+
+/*#resources_second_header_right  p{
+		overflow: hidden;
+		color: #666666;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 18px;
+	}*/
+
+.pagetitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    color: #000000;
+}
+
+/*END CONTENT*/
+
+/*FREE QUOTE and CONTACT US PAGE*/
+#free_quote_box {
+    height: 210px;
+    width: 325px;
+    padding: 50px 0 0 20px;
+}
+
+#form_div {
+    width: 400px;
+    float: right;
+    padding: 20px 50px 50px 0;
+}
+
+td {
+    padding-bottom: 3px;
+}
+
+input {
+    color: #ffffff;
+    background-color: #284B5E;
+    border: 2px solid;
+    border-color: #263743 #64899C #64899C #263743;
+}
+
+#message_name, #message_email, #message_company, #message_phone, #message_numb_of_w2_forms, #message_appx_tot_income, #message_numb_of_stock_trans, #message_numb_of_states_lived_in #message_referred_by_name, #message_subject {
+    margin-bottom: 10px;
+}
+
+#message_us_citizen, #message_home_owner, #message_filing_status_id, #message_spcl_tax_considerations, #message_body {
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-color: #263743 #64899C #64899C #263743;
+}
+
+#message_submit {
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #284B5E;
+    border: 2px solid;
+    border-color: #64899C #263743 #263743 #64899C;
+    padding: 7px;
+}
+
+/*END FREE QUOTE and CONTACT US PAGE*/
+
+/* FORM EXTRAS */
+
+#commit {
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #284B5E;
+    border: 2px solid;
+    border-color: #64899C #263743 #263743 #64899C;
+    padding: 7px;
+}
+
+#contactblurb p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #626262;
+}
+
+.contactusdetailtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #4a4a4a;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    letter-spacing: 3px;
+    margin-left: 400px;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: small;
+    color: navy;
+    padding: 5px;
+}
+
+form {
+    padding: 0;
+    margin: 0; /*margin-top: -15px;*/
+    line-height: 150%;
+    margin-left: 0px;
+}
+
+form p {
+    padding-top: 5px;
+}
+
+form span {
+    color: #577780;
+    font-weight: bold;
+    font-size: large;
+}
+
+.rightcolumn {
+    margin-left: 190px;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
+
+form domain {
+    color: #0095E1;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+}
+
+/*form label {
+	  font-weight: bold;
+	  font-size: small;
+	  color: black;
+	}*/
+
+form label {
+    display: block;
+    width: 180px;
+    float: left;
+    position: relative; /*added so label would show in ie */
+}
+
+form input {
+    background: #E3E3E3;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    margin-right: 10px; /*height:15px;*/
+    width: 180px; /*border: 1px solid white;*/
+}
+
+form textarea {
+    background: #E3E3E3;
+    color: black;
+    font-weight: bold;
+    height: 120px;
+    width: 392px; /*height:15px;*/
+/*border: 1px solid white;*/
+}
+
+/*form {
+	  text-align: center;
+	  padding: 4px;
+	  background-color: #0066FF;
+	}*/
+
+#contactform {
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.contactformpagetitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #4a4a4a;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    letter-spacing: 3px;
+}
+
+#contactform .contactpage {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+#loginform {
+    margin: 0px;
+}
+
+#adminfunctions {
+    width: 710px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    background-color: #DEDFB3; /*background-color: white;*/
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin: 0 10px 10px 10px;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+}
+
+#adminlinks a {
+    width: 140px;
+    margin: 0px 15px 0px 0px;
+    background-color: #5280B1;
+    list-style: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+#adminlinks a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#contactusmailto a {
+/*width:300px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* END FORM EXTRAS */
+
+/*FOOTER*/
+#ft {
+    height: 250px;
+    width: 860px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #626262;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#ft ul li {
+    float: left;
+    list-style: none;
+}
+
+#ft ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer_content p {
+    font-size: 12px;
+}
+
+#footer_content {
+    width: 860px;
+    padding: 0 9px;
+    margin-top: 10px;
+}
+
+#footer_image2 {
+    float: right;
+}
+
+#navbarft {
+    margin-left: 30px;
+    padding-top: 40px;
+}
+
+#navbarft a:link, #navbarft a:visited, #navbarft a:hover {
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: underline;
+}
+
+#navbarft .navdivider {
+    color: #626262;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+
+/*--==END DIVS==--*/
+

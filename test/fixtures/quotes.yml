@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  company: MyString
+  phone: MyString
+  numb_of_w2_forms: MyString
+  appx_tot_income: MyString
+  numb_of_stock_trans: MyString
+  numb_of_states_lived_in: MyString
+  referred_by_name: MyString
+  visa_holder: false
+  home_owner: false
+  filing_status_id: MyString
+  spcl_tax_considerations: MyText
+
+two:
+  name: MyString
+  email: MyString
+  company: MyString
+  phone: MyString
+  numb_of_w2_forms: MyString
+  appx_tot_income: MyString
+  numb_of_stock_trans: MyString
+  numb_of_states_lived_in: MyString
+  referred_by_name: MyString
+  visa_holder: false
+  home_owner: false
+  filing_status_id: MyString
+  spcl_tax_considerations: MyText

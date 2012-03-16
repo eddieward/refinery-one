@@ -1,0 +1,179 @@
+
+<div id="custom-doc" class="yui-t7">
+
+  <div id="wrapper">
+
+
+    <div id="bd">
+      <div id="yui-main">
+
+        <div class="yui-b">
+          <div id="image_wrapper">
+
+            <img alt="shaking hands and tax forms" src="/images/engeltax/handshake_header.jpg" />
+          </div>
+        </div>
+
+        <div class="yui-b">
+
+          <br />
+
+          <span class="pagetitle">Get a Free Quote</span>
+
+          <img src="/images/engeltax/nav_horizontal.gif" />
+          <br />
+          <br />
+
+          <div class="yui-gd">
+            <div class="yui-u first">
+              <div id="titledivider">
+              </div>
+
+              <div id="free_quote_box">
+                <img src="/images/engeltax/free_quote.jpg" />
+              </div>
+            </div>
+
+            <div id="yui-u">
+              <div id="form_div">
+
+                <a name="freequoteanchor"></a>
+
+
+                <%= form_for @quote, :url => { :action => "create" }, :html => { :method => :post } do |f| %>
+
+                  <%= render :partial => "/shared/admin/error_messages",
+                    :locals => {
+                    :object => @quote,
+                    :include_object_name => true
+                  } %>
+
+                  <table border="0" cellspacing="5">
+
+                    <tbody><tr>
+                        <td valign="bottom" colspan="5"></td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom"><span>*</span>Name:</td>
+
+                        <td class="required" valign="bottom"><span>*</span>Email:</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom"><%= f.text_field :name %></td>
+                        <td class="required" valign="bottom"><%= f.text_field :email %></td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom">Company:</td>
+
+                        <td class="required" valign="bottom">Phone:</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom"><%= f.text_field :company %></td>
+                        <td class="required" valign="bottom"><%= f.text_field :phone %></td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom">Number of W2 Forms:</td>
+
+                        <td class="required" valign="bottom">Approximate Total Income:</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom"><%= f.text_field :numb_of_w2_forms%></td>
+                        <td class="required" valign="bottom"><%= f.text_field :appx_tot_income%></td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom">Number of Stock Transactions:</td>
+
+                        <td class="required" valign="bottom">Number of States Lived In:</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom"><%= f.text_field :numb_of_stock_trans %></td>
+                        <td class="required" valign="bottom"><%= f.text_field :numb_of_states_lived_in %></td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom">Referred By Name:</td>
+
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom"><%= f.text_field :referred_by_name %></td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2">&#160;</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom">Visa Holder?:</td>
+
+                        <td class="required" valign="bottom" colspan="2">Home Owner?:</td>
+                      </tr>
+
+                      <tr class="bodytext">
+
+                        <td class="required" ><%= f.check_box(:visa_holder) %></td>
+                        <td class="required" ><%= f.check_box(:home_owner)  %></td>
+                      </tr>
+
+                      <tr>
+                        <td class="required" valign="bottom" colspan="3"><label for="filing_status_id">Filing Status:</label>
+                        </td>
+
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" >
+                          <%= f.select( :filing_status_id,  { "Select Filing Status        " => "0", "Married" => "1", "Single" => "2", "Married filing separately" => "3", "Head of Household" => "4"}) %>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td class="required" valign="bottom">Special Tax Considerations:</td>
+                      </tr>
+
+                      <tr class="bodytext">
+                        <td colspan="2"><%= f.text_area(:spcl_tax_considerations) %>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <%= f.submit "Submit" %>
+
+                <% end %>
+
+                <%= render :partial => "/shared/content_page" %>
+
+              </div>
+
+            </div>
+            <div class="yui-u">             
+
+              <div id="addresswrapper">
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+

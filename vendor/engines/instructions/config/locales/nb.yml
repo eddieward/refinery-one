@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    instructions:
+      title: Instructions
+  admin:
+    instructions:
+      index:
+        create_new: Lag en ny Instruction
+        reorder: Endre rekkefølgen på Instructions
+        reorder_done: Ferdig å endre rekkefølgen Instructions
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Instructions enda. Klikk på "Lag en ny Instruction" for å legge til din første instruction.
+      instruction:
+        view_live: Vis hvordan denne instruction ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne instruction
+        delete: Fjern denne instruction permanent
+  instructions:
+    show:
+      other: Andre Instructions

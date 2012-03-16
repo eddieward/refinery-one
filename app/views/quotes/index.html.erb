@@ -1,0 +1,80 @@
+<div id="custom-doc" class="yui-t7">
+
+  <div id="wrapper">
+
+    <div id="bd">
+      <div id="yui-main">
+
+        <div class="yui-b">
+          <div id="image_wrapper">
+
+            <img alt="shaking hands and tax forms" src="/images/engeltax/handshake_header.jpg"/>
+          </div>
+        </div>
+
+        <div class="yui-b">
+
+          <br/>
+
+          <span class="pagetitle">Free Quote Request Listing</span>
+
+          <img src="/images/engeltax/nav_horizontal.gif"/>
+          <br/>
+          <br/>
+
+          <div class="yui-gd">
+            <div class="yui-u first">
+              <div id="titledivider">
+              </div>
+
+            </div>
+
+            <div id="yui-u">
+              <br/>
+              <br/>
+
+              <div id="quotes-index">
+                <table>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Show</th>
+                    <th>Edit</th>
+                    <th>Completed</th>
+                  </tr>
+                  <% @quotes.each do |quote| %>
+                      <tr>
+                        <th><%= quote.name %> </th>
+                        <th><a href="mailto:<%= quote.email %>"><%= quote.email %></a></th>
+                        <th><%= link_to 'Show', quote %> </th>
+                        <th><%= link_to 'Edit', edit_quote_path(quote) %></th>
+                        <th><%= quote.complete %></th>
+                      </tr>
+                  <% end %>
+                </table>
+                <div id="pagination">
+
+                  <%= will_paginate @quotes %>
+                  <%= render :partial => "/shared/content_page" %>
+                  <br/>
+                  <%= page_entries_info @quotes %>
+                </div>
+              </div>
+            </div>
+            <div class="yui-u">
+              <div id="titledivider"></div>
+
+              <div id="addresswrapper">
+              </div>
+            </div>
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

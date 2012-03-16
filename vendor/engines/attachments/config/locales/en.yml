@@ -1,0 +1,23 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    attachments:
+      title: Attachments
+  admin:
+    attachments:
+      index:
+        create_new: Create a new Attachment
+        reorder: Reorder Attachments
+        reorder_done: Done Reordering Attachments
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Attachments yet. Click "Create a new Attachment" to add your first attachment.
+      attachment:
+        view_live: View this attachment live <br/><em>(opens in a new window)</em>
+        edit: Edit this attachment
+        delete: Remove this attachment forever
+  attachments:
+    show:
+      other: Other Attachments

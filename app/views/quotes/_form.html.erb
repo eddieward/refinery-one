@@ -1,0 +1,23 @@
+<%= simple_form_for(@quote) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :company %>
+    <%= f.input :phone %>
+    <%= f.input :numb_of_w2_forms %>
+    <%= f.input :appx_tot_income %>
+    <%= f.input :numb_of_stock_trans %>
+    <%= f.input :numb_of_states_lived_in %>
+    <%= f.input :referred_by_name %>
+    <%= f.input :visa_holder %>
+    <%= f.input :home_owner %>
+    <%= f.input :filing_status_id %>
+    <%= f.input :spcl_tax_considerations %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

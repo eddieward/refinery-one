@@ -1,0 +1,58 @@
+<div id="custom-doc" class="yui-t7">
+
+  <div id="wrapper">
+
+
+    <div id="bd">
+      <div id="yui-main">
+
+        <div class="yui-b">
+
+          <div id="image_wrapper">
+            <img alt="shaking hands and tax forms" src="/images/engeltax/handshake_header.jpg" />
+          </div>
+        </div>
+
+        <div class="yui-b">
+
+          <div class="yui-gc">
+            <div class="yui-u first">
+
+              <div id="header_left">
+                <a name="fileanchor"></a>
+
+                <h1>Attachments</h1>
+
+                <img src="/images/engeltax/line_break_long.gif" />
+
+              </div>
+              <div id="sub_header_gray">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<% content_for :body_content_left do %>
+  <ul id="attachments">
+    <% @attachments.each do |attachment| %>
+      <li>
+        <%= link_to attachment.title, attachment_url(attachment) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+
+<br />
+<br />
+<br />
+<br />

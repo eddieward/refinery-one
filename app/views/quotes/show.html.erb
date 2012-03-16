@@ -1,0 +1,134 @@
+<div id="custom-doc" class="yui-t7">
+
+  <div id="wrapper">
+
+
+    <div id="bd">
+      <div id="yui-main">
+
+        <div class="yui-b">
+          <div id="image_wrapper">
+
+            <img alt="shaking hands and tax forms" src="/images/engeltax/handshake_header.jpg"/>
+          </div>
+        </div>
+
+        <div class="yui-b">
+
+          <br/>
+
+          <span class="pagetitle">Free Quote Request for <%= @quote.name %></span>
+
+          <img src="/images/engeltax/nav_horizontal.gif"/>
+          <br/>
+          <br/>
+
+          <div class="yui-gd">
+            <div class="yui-u first">
+              <div id="titledivider">
+              </div>
+
+            </div>
+
+            <div id="yui-u">
+
+              <div id="quotes-show">
+                <p>
+                  <b>Name:</b>
+                  <%= @quote.name %>
+                </p>
+
+                <p>
+                  <b>Email:</b>
+                  <a href="mailto:<%= @quote.email %>"><%= @quote.email %></a>
+                </p>
+
+                <p>
+                  <b>Company:</b>
+                  <%= @quote.company %>
+                </p>
+
+                <p>
+                  <b>Phone:</b>
+                  <%= @quote.phone %>
+                </p>
+
+                <p>
+                  <b>Number of W2 Forms:</b>
+                  <%= @quote.numb_of_w2_forms %>
+                </p>
+
+                <p>
+                  <b>Approximate Total Income:</b>
+                  <%= @quote.appx_tot_income %>
+                </p>
+
+                <p>
+                  <b>Number of Stock Transactions:</b>
+                  <%= @quote.numb_of_stock_trans %>
+                </p>
+
+                <p>
+                  <b>Number of states lived in:</b>
+                  <%= @quote.numb_of_states_lived_in %>
+                </p>
+
+                <p>
+                  <b>Referred by name:</b>
+                  <%= @quote.referred_by_name %>
+                </p>
+
+                <p>
+                  <b>Visa holder:</b>
+                  <%= @quote.visa_holder %>
+                </p>
+
+                <p>
+                  <b>Home owner:</b>
+                  <%= @quote.home_owner %>
+                </p>
+
+                <p>
+                  <b>Filing status:</b>
+                  <%= @quote.filing_status_id %>
+                </p>
+
+                <p>
+                  <b>Special tax considerations:</b>
+                  <%= @quote.spcl_tax_considerations %>
+                </p>
+                            <p>
+                  <b>Completed:</b>
+                  <%= @quote.complete %>
+                </p>
+                <br/>
+                <br/>
+
+                <%= link_to 'Edit', edit_quote_path(@quote) %>
+                <br/>
+                 <br/>
+
+                <%= link_to 'More Free Quote Requests', quotes_path %>
+
+
+                <%= render :partial => "/shared/content_page" %>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="yui-u">
+
+            <div id="addresswrapper">
+            </div>
+          </div>
+        </div>
+        <br/>
+        <br/>
+
+      </div>
+    </div>
+  </div>
+</div>
+

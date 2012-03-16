@@ -1,0 +1,29 @@
+<% form_for [:admin, @attachment] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+    :object => @attachment,
+    :include_object_name => true
+  } %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :download -%>
+
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+      :f => f,
+      :field => :download_id,
+      :resource => @attachment.download,
+    } %>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('admin.attachments.attachment.delete'),
+                :delete_confirmation => t('shared.admin.delete.message', :title => @attachment.title)
+              } %>
+<% end -%>
