@@ -15,6 +15,9 @@ group :production do
 end
 
 
+gem 'fog'
+gem 'aws-s3'
+
 gem "simple_form"
 
 

@@ -54,10 +54,15 @@ Refinery::Application.configure do
   config.active_support.deprecation = :notify
 end
 
+Refinery.rescue_not_found = true
 # When true will use Amazon's Simple Storage Service on your production machine
 # instead of the default file system for resources and images
-# Make sure to your bucket info is correct in amazon_s3.yml
+
+ENV['S3_KEY']='AKIAJN4WJHOBT4JMBNFA'
+ENV['S3_SECRET']='AfFbqfR7VD3L9sZ3XwBxxHfH1A8grVWhcz/z7lhE'
+ENV['S3_BUCKET']='engeltax'
+
+
 Refinery.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
 
-# Handle some exceptions with the 404 page.
-Refinery.rescue_not_found = true
+
