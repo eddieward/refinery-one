@@ -38,5 +38,10 @@ module Refinery
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # for email from address
+    config.action_dispatch.tld_length = 2
+
+
   end
 end
