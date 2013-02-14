@@ -14,6 +14,10 @@ group :production do
   gem 'mysql2'
 end
 
+group :production do
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
+
 
 gem 'fog'
 gem 'aws-s3'

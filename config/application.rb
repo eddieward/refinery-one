@@ -42,6 +42,10 @@ module Refinery
     # for email from address
     config.action_dispatch.tld_length = 2
 
+    if Rails.env == "production"
+      config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-12276023-1")
+    end
+
 
   end
 end

@@ -80,7 +80,6 @@ GEM
     moretea-awesome_nested_set (1.4.3.1)
       activerecord (~> 3.0.0)
     mysql2 (0.2.6)
-    mysql2 (0.2.6-x86-mingw32)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -89,11 +88,12 @@ GEM
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.2)
-    nokogiri (1.5.2-x86-mingw32)
     polyglot (0.3.3)
     rack (1.2.6)
     rack-cache (0.5.3)
       rack (>= 0.4)
+    rack-google_analytics (1.0.2)
+      rack
     rack-mount (0.6.14)
       rack (>= 1.0.0)
     rack-test (0.5.7)
@@ -147,13 +147,13 @@ GEM
 
 PLATFORMS
   ruby
-  x86-mingw32
 
 DEPENDENCIES
   aws-s3
   capistrano
   fog
   mysql2
+  rack-google_analytics
   rails (= 3.0.3)
   refinerycms (~> 0.9.8.9)
   refinerycms-attachments (= 1.0)!
