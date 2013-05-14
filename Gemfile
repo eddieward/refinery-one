@@ -6,13 +6,8 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-group :development do
-  gem 'mysql2'
-end
+gem 'mysql2'
 
-group :production do
-  gem 'mysql2'
-end
 
 group :production do
   gem 'rack-google_analytics', :require => "rack/google_analytics"
