@@ -13,26 +13,30 @@ class InquiriesController < ApplicationController
 
   def create
     @inquiry = Inquiry.new(params[:inquiry])
+    if verify_recaptcha
+      if @inquiry.save
+        if @inquiry.ham?
+          begin
+            InquiryMailer.notification(@inquiry, request).deliver
+          rescue
+            logger.warn "There was an error delivering an inquiry notification.\n#{$!}\n"
+          end
 
-    if @inquiry.save
-      if @inquiry.ham?
-        begin
-          InquiryMailer.notification(@inquiry, request).deliver
-        rescue
-          logger.warn "There was an error delivering an inquiry notification.\n#{$!}\n"
+          begin
+            InquiryMailer.confirmation(@inquiry, request).deliver
+          rescue
+            logger.warn "There was an error delivering an inquiry confirmation:\n#{$!}\n"
+          end
         end
 
-        begin
-          InquiryMailer.confirmation(@inquiry, request).deliver
-        rescue
-          logger.warn "There was an error delivering an inquiry confirmation:\n#{$!}\n"
-        end
+        redirect_to thank_you_inquiries_url
+      else
+        render :action => 'new'
       end
-
-      redirect_to thank_you_inquiries_url
     else
       render :action => 'new'
     end
+
   end
 
 protected

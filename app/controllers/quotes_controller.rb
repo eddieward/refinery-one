@@ -40,20 +40,25 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
   end
 
-  # POST /quotes
-  # POST /quotes.xml
+# POST /quotes
+# POST /quotes.xml
   def create
     @quote = Quote.new(params[:quote])
 
     respond_to do |format|
-      if @quote.save
-        Notifier.notify(@quote).deliver
-        Notifier.confirmation(@quote).deliver
-        format.html { redirect_to('/thank-you', :notice => "Quote was successfully sent.") }
-        format.xml  { render :xml => @quote, :status => :created, :location => @quote }
+
+      if verify_recaptcha
+        if @quote.save
+          Notifier.notify(@quote).deliver
+          Notifier.confirmation(@quote).deliver
+          format.html { redirect_to('/thank-you', :notice => "Quote was successfully sent.") }
+          format.xml { render :xml => @quote, :status => :created, :location => @quote }
+        else
+          format.html { render :action => "new" }
+          format.xml { render :xml => @quote.errors, :status => :unprocessable_entity }
+        end
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @quote.errors, :status => :unprocessable_entity }
       end
     end
   end

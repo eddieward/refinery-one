@@ -1,15 +1,22 @@
 source 'http://rubygems.org'
 
+ruby "1.8.7"
+
 gem 'rails', '3.0.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-gem 'mysql2'
+group :development do
+  gem 'sqlite3'
+end
+
+
 
 
 group :production do
+  gem 'mysql2'
   gem 'rack-google_analytics', :require => "rack/google_analytics"
 end
 
@@ -67,6 +74,12 @@ gem 'refinerycms-i18n', '~> 0.9'
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
+
+# captcha
+gem "recaptcha", :require => "recaptcha/rails"
+
+# for adding environment variables
+gem 'figaro'
 
 # END USER DEFINED
 

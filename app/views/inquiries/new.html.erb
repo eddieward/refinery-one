@@ -8,9 +8,11 @@
         <div class="yui-b">
 
           <div id="image_wrapper">
-            <img alt="shaking hands and tax forms" src="/images/engeltax/handshake_header.jpg" />
-          </div><!--end image_wrapper-->
-        </div><!--end yui-b-->
+            <img alt="shaking hands and tax forms" src="/images/engeltax/handshake_header.jpg"/>
+          </div>
+          <!--end image_wrapper-->
+        </div>
+        <!--end yui-b-->
 
         <div class="yui-b">
           <div class="yui-g">
@@ -19,92 +21,105 @@
 
               <H1>ASK ENGEL TAX</H1>
 
-              <img src="/images/engeltax/nav_horizontal.gif" />
-              <br />
-              <br />
+              <img src="/images/engeltax/nav_horizontal.gif"/>
+              <br/>
+              <br/>
+
               <div class="yui-gc">
                 <div class="yui-u first">
                   <div id="titledivider"></div>
 
                   <div id="contactblurb"><p>
+
                     <p><span id="BugEvents">Please fill out the form with any questions that you may have.</span></p>
-                    </p></div>
-                  <br />
+                  </div>
+                  <br/>
 
                   <div id="header_left"><!--start header_left-->
 
-                    <img src="/images/engeltax/line_break_long.gif" />
+                    <img src="/images/engeltax/line_break_long.gif"/>
 
-                  </div><!--end header_left-->
-                  <br />
-                  <br />
+                  </div>
+                  <!--end header_left-->
+                  <br/>
+                  <br/>
 
 
 
 
 
                   <%= form_for @inquiry do |f| %>
-                    <%= render :partial => "/shared/admin/error_messages",
-                      :locals => {
-                      :object => @inquiry,
-                      :include_object_name => true
-                    } %>
+                      <%= render :partial => "/shared/admin/error_messages",
+                                 :locals => {
+                                         :object => @inquiry,
+                                         :include_object_name => true
+                                 } %>
 
 
 
-                    <table border="0" cellspacing="5">
+                      <table border="0" cellspacing="5">
 
-                      <tr>
+                        <tr>
 
-                        <td valign="top" colspan='5'></td>
-                      </tr>
+                          <td valign="top" colspan='5'></td>
+                        </tr>
 
-                      <tr class='bodytext'>
-                        <td class='required' valign='bottom'><span>*</span>Name:</td>
-                        <td class='required' valign='bottom'><span>*</span>Email:</td>
+                        <tr class='bodytext'>
+                          <td class='required' valign='bottom'><span>*</span>Name:</td>
+                          <td class='required' valign='bottom'><span>*</span>Email:</td>
 
-                      </tr>
+                        </tr>
 
-                      <tr class='bodytext'>
+                        <tr class='bodytext'>
 
-                        <td> <%= f.text_field :name %></td>
-                        <td> <%= f.text_field :email %></td>
-                      </tr>
+                          <td> <%= f.text_field :name %></td>
+                          <td> <%= f.text_field :email %></td>
+                        </tr>
 
-                      <tr class='bodytext'>
-                        <td class='required' valign='bottom'>Company:</td>
-                        <td class='required' valign='bottom'>Phone:</td>
-                      </tr>
+                        <tr class='bodytext'>
+                          <td class='required' valign='bottom'>Company:</td>
+                          <td class='required' valign='bottom'>Phone:</td>
+                        </tr>
 
 
-                      <tr class='bodytext'>
-                        <td>  <%= f.text_field :company %></td>
-                        <td> <%= f.text_field :phone %></td>
-                      </tr>
+                        <tr class='bodytext'>
+                          <td>  <%= f.text_field :company %></td>
+                          <td> <%= f.text_field :phone %></td>
+                        </tr>
 
-                      <tr class='bodytext'>
-                        <td class='required' valign='bottom'><span>*</span>Subject:</td>
-                      </tr>
+                        <tr class='bodytext'>
+                          <td class='required' valign='bottom'><span>*</span>Subject:</td>
+                        </tr>
 
-                      <tr class='bodytext'>
+                        <tr class='bodytext'>
 
-                        <td > <%= f.text_field :subject %></td>
+                          <td> <%= f.text_field :subject %></td>
 
-                      </tr>
+                        </tr>
 
-                      <tr class='bodytext'>
-                        <td class='required' valign='bottom'><span>*</span>Ask Engel Tax:</td>
-                      </tr>
+                        <tr class='bodytext'>
+                          <td class='required' valign='bottom'><span>*</span>Ask Engel Tax:</td>
+                        </tr>
 
-                      <tr class='bodytext'>
-                        <td colspan='2'> <%= f.text_area :message, :rows => 8 %></td>
+                        <tr class='bodytext'>
+                          <td colspan='2'> <%= f.text_area :message, :rows => 8 %></td>
 
-                      </tr>
+                        </tr>
 
-                    </table>
+                      </table>
 
-                    <%= f.submit t('.send') %>
-                    <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
+
+                      <div id="contactblurb"><p>
+
+                        <p><span id="BugEvents">Please prove that you are a human.</span></p>
+                      </div>
+
+                      <%= recaptcha_tags %>
+
+
+
+                      <%= f.submit t('.send') %>
+                      <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
 
                   <% end %>
 
@@ -113,21 +128,26 @@
                 <!--end form_div-->
 
                 <section id='body_content'>
-                  <%=raw @page[:side_body] %>
+                  <%= raw @page[:side_body] %>
                 </section>
 
               </div>
 
-            </div><!-- services-top -->
+            </div>
+            <!-- services-top -->
 
-          </div><!-- yui-g -->
-          <br />
-          <br />
+          </div>
+          <!-- yui-g -->
+          <br/>
+          <br/>
 
-        </div><!--end yui-b-->
+        </div>
+        <!--end yui-b-->
 
-      </div><!--end yui-main-->
-    </div><!--end bd-->
+      </div>
+      <!--end yui-main-->
+    </div>
+    <!--end bd-->
 
   </div>
 </div>
